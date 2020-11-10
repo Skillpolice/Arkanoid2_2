@@ -25,11 +25,5 @@ public class Block_Red : MonoBehaviour
     }
 
 
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-       if(levelManager.blocksCountRed <=0)
-        {
-            
-        }
-    }
+    
 }

@@ -11,11 +11,21 @@ public class Ball : MonoBehaviour
     Pad pad; //ссылка(скрипт) на платформу, что бы мячь ездил вместе с платформой
 
     public float speedBall;
-    bool isStarted;
+    public bool isStarted;
+
+    float yPosition;
+   
 
     private void Start()
     {
         pad = FindObjectOfType<Pad>();
+
+        yPosition = transform.position.y;
+
+        if (pad.autoPlay)
+        {
+            StarBall();
+        }
     }
 
 
@@ -30,8 +40,7 @@ public class Ball : MonoBehaviour
         else
         {
             Vector3 padPosition = pad.transform.position; //позиция платформы 
-            float yPosBall = transform.position.y;
-            Vector3 ballNewPosition = new Vector3(padPosition.x, yPosBall, 0); //новая позиция меча
+            Vector3 ballNewPosition = new Vector3(padPosition.x, yPosition, 0); //новая позиция меча
             transform.position = ballNewPosition;
 
             if (Input.GetMouseButtonDown(0)) //нажатие мыши left для полета меча
@@ -46,7 +55,7 @@ public class Ball : MonoBehaviour
     {
         float randX = Random.Range(-5f, 5f);
         Vector2 force = new Vector2(randX, 5).normalized * speedBall;
-        rb.AddForce(force);   //создаем дивежие меча по координатам через AddForce
+        rb.velocity = force;   //создаем дивежие меча по координатам через AddForce
         isStarted = true;
     }
 

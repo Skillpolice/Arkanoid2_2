@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     public Text scoreText;
+    
     public Pad pad;
 
     int score;
@@ -19,6 +20,7 @@ public class GameManager : MonoBehaviour
             if (gameManagers[i].gameObject != gameObject)
             {
                 Destroy(gameObject);
+                gameObject.SetActive(false);
                 break;
             }
         }

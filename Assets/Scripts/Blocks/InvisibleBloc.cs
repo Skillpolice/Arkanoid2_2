@@ -14,7 +14,7 @@ public class InvisibleBloc : MonoBehaviour
 
     public int points;
     public int blockHealth;
-    int invblock;
+    public int invblock;
     public SpriteRenderer spriteRenderer;
 
 
@@ -28,11 +28,12 @@ public class InvisibleBloc : MonoBehaviour
 
     public void Update()
     {
-
+       
     }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
+
         invblock--;
         if (invblock == 1)
         {

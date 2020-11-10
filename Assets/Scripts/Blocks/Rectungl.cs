@@ -7,7 +7,7 @@ public class Rectungl : MonoBehaviour
 {
     GameManager gameManager; //ссылка на обьект блокаБ что он мог подсчитать каждый разбитый блок
     LevelManager levelManager;
-    public Sprite sprite;
+    public Sprite[] sprite;
 
     [Tooltip("Кол-во очков")] public int points;
     [Tooltip("Кол-во жизней")] public int blockHealth;

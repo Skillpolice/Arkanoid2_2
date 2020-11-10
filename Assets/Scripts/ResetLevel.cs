@@ -2,52 +2,31 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class ResetLevel : MonoBehaviour
 {
+    public Text healthText;
     public Ball ball;
-    public Pad pad;
-     
 
-    bool isfalen;
 
     [Header("ко-ло жизней")]
     public int lifeCount;
-
-    private void Start()
-    {
-        
-    }
-
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
 
-        //если шар уже дотронулся то нижней платформы, то уже надо вернуть шар на место, не надо делать проверку на -4,7
+        lifeCount--;
+        ball.isStarted = false;
 
-        Vector3 padPosition = pad.transform.position; //позиция платформы 
-        float yPosBall = transform.position.y;
+        healthText.text =  " = " +  lifeCount.ToString();
+        //DontDestroyOnLoad(gameObject);
 
-        if (isfalen == collision)
+        if(lifeCount <=0)
         {
-            
-            lifeCount--;
-            Vector3 ballNewPosition = new Vector3(padPosition.x, yPosBall, 0); //новая позиция меча
-            transform.position = ballNewPosition;
-            isfalen = true;
+            SceneManager.LoadScene(1);
         }
-        else
-        {
-           
-            lifeCount--;
-            if (lifeCount <= 0)
-            {
-                SceneManager.LoadScene(0);
-            }
-        }
-
-
 
     }
 }

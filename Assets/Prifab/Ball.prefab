@@ -97,8 +97,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 8652711697261708287}
-  pad: {fileID: 0}
-  speedBall: 350
+  speedBall: 10
+  isStarted: 0
 --- !u!50 &8652711697261708287
 Rigidbody2D:
   serializedVersion: 4
