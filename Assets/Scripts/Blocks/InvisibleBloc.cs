@@ -23,7 +23,7 @@ public class InvisibleBloc : MonoBehaviour
         gameManager = FindObjectOfType<GameManager>(); //нати обьект у которого есть ссылка GameManager  и полжить в переменную gameMaanger
         levelManager = FindObjectOfType<LevelManager>();
         levelManager.BlockCreatedRad();
-        spriteRenderer.GetComponent<SpriteRenderer>();
+        spriteRenderer.GetComponent<SpriteRenderer>(); // GetComponent - ищет компонент на котором весит скрипт обьекта
     }
 
     public void Update()

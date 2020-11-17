@@ -20,12 +20,13 @@ public class ResetLevel : MonoBehaviour
         lifeCount--;
         ball.isStarted = false;
 
-        healthText.text =  " = " +  lifeCount.ToString();
+        healthText.text =  " Health " +  lifeCount.ToString();
         //DontDestroyOnLoad(gameObject);
 
-        if(lifeCount <=0)
+        if (lifeCount <= 0)
         {
-            SceneManager.LoadScene(1);
+            int index = SceneManager.GetActiveScene().buildIndex;
+            SceneManager.LoadScene(index + 1);
         }
 
     }
