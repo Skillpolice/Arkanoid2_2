@@ -1,33 +1,37 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.SceneManagement;
-using UnityEngine.UI;
-
+﻿using UnityEngine;
+ 
 public class ResetLevel : MonoBehaviour
 {
-    public Text healthText;
-    public Ball ball;
+    GameManager gameManager;
+    Ball ball;
+    public GameObject particalEffects;
 
-
-    [Header("ко-ло жизней")]
-    public int lifeCount;
+    public void Start()
+    {
+        gameManager = FindObjectOfType<GameManager>(); //нахождение других перенных - методов других скриптов
+        ball = FindObjectOfType<Ball>();
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
-
-        lifeCount--;
-        ball.isStarted = false;
-
-        healthText.text =  " Health " +  lifeCount.ToString();
-        //DontDestroyOnLoad(gameObject);
-
-        if (lifeCount <= 0)
+        if (collision.gameObject.CompareTag("Ball")) //если тег совпадает с названием выполняем код ниже
         {
-            int index = SceneManager.GetActiveScene().buildIndex;
-            SceneManager.LoadScene(index + 1);
+            //если мяч - отнять жизнь
+            gameManager.LoseLife();
+            ball.RestartBall();
+            Instantiate(particalEffects, transform.position, Quaternion.identity);
+        }
+        else
+        {
+            //если не мяч - уничтожить обьект
+            Destroy(collision.gameObject);
         }
 
+        
     }
+
+    
+
+   
 }

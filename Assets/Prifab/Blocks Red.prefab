@@ -45,8 +45,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5be75c1bd711dfc4f9050a2fcd3a5c3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
   points: 50
+  pickupPrefab: {fileID: 6195663844516507710, guid: 044f7dca0a37b0949b7336f40d24cd41,
+    type: 3}
+  particalEffects: {fileID: 0}
 --- !u!212 &8936538901624863723
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -168,8 +170,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5be75c1bd711dfc4f9050a2fcd3a5c3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
   points: 50
+  pickupPrefab: {fileID: 6195663844516507710, guid: 044f7dca0a37b0949b7336f40d24cd41,
+    type: 3}
+  particalEffects: {fileID: 0}
 --- !u!212 &8936538901824879388
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -291,8 +295,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5be75c1bd711dfc4f9050a2fcd3a5c3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
   points: 50
+  pickupPrefab: {fileID: 6195663844516507710, guid: 044f7dca0a37b0949b7336f40d24cd41,
+    type: 3}
+  particalEffects: {fileID: 0}
 --- !u!212 &8936538901834693761
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -414,8 +420,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5be75c1bd711dfc4f9050a2fcd3a5c3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
   points: 50
+  pickupPrefab: {fileID: 6195663844516507710, guid: 044f7dca0a37b0949b7336f40d24cd41,
+    type: 3}
+  particalEffects: {fileID: 0}
 --- !u!212 &8936538901840863941
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -537,8 +545,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5be75c1bd711dfc4f9050a2fcd3a5c3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
   points: 50
+  pickupPrefab: {fileID: 6195663844516507710, guid: 044f7dca0a37b0949b7336f40d24cd41,
+    type: 3}
+  particalEffects: {fileID: 100006, guid: bcaff8fc36e95584bb27cc3cf7c6cb14, type: 3}
 --- !u!212 &8936538901876552784
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -660,8 +670,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5be75c1bd711dfc4f9050a2fcd3a5c3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
   points: 50
+  pickupPrefab: {fileID: 6195663844516507710, guid: 044f7dca0a37b0949b7336f40d24cd41,
+    type: 3}
+  particalEffects: {fileID: 0}
 --- !u!212 &8936538901944794779
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -783,8 +795,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5be75c1bd711dfc4f9050a2fcd3a5c3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
   points: 50
+  pickupPrefab: {fileID: 6195663844516507710, guid: 044f7dca0a37b0949b7336f40d24cd41,
+    type: 3}
+  particalEffects: {fileID: 0}
 --- !u!212 &8936538901947438727
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -906,8 +920,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5be75c1bd711dfc4f9050a2fcd3a5c3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
   points: 50
+  pickupPrefab: {fileID: 6195663844516507710, guid: 044f7dca0a37b0949b7336f40d24cd41,
+    type: 3}
+  particalEffects: {fileID: 0}
 --- !u!212 &8936538901982750546
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1029,8 +1045,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5be75c1bd711dfc4f9050a2fcd3a5c3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
   points: 50
+  pickupPrefab: {fileID: 6195663844516507710, guid: 044f7dca0a37b0949b7336f40d24cd41,
+    type: 3}
+  particalEffects: {fileID: 100006, guid: bcaff8fc36e95584bb27cc3cf7c6cb14, type: 3}
 --- !u!212 &8936538902405104479
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1152,8 +1170,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5be75c1bd711dfc4f9050a2fcd3a5c3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
   points: 50
+  pickupPrefab: {fileID: 6195663844516507710, guid: 044f7dca0a37b0949b7336f40d24cd41,
+    type: 3}
+  particalEffects: {fileID: 0}
 --- !u!212 &8936538902513112190
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1275,8 +1295,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5be75c1bd711dfc4f9050a2fcd3a5c3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
   points: 50
+  pickupPrefab: {fileID: 6195663844516507710, guid: 044f7dca0a37b0949b7336f40d24cd41,
+    type: 3}
+  particalEffects: {fileID: 0}
 --- !u!212 &8936538902550416099
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1398,8 +1420,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5be75c1bd711dfc4f9050a2fcd3a5c3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
   points: 50
+  pickupPrefab: {fileID: 6195663844516507710, guid: 044f7dca0a37b0949b7336f40d24cd41,
+    type: 3}
+  particalEffects: {fileID: 0}
 --- !u!212 &8936538902634541338
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1521,8 +1545,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5be75c1bd711dfc4f9050a2fcd3a5c3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
   points: 50
+  pickupPrefab: {fileID: 6195663844516507710, guid: 044f7dca0a37b0949b7336f40d24cd41,
+    type: 3}
+  particalEffects: {fileID: 0}
 --- !u!212 &8936538902919380653
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1701,8 +1727,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5be75c1bd711dfc4f9050a2fcd3a5c3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
   points: 50
+  pickupPrefab: {fileID: 6195663844516507710, guid: 044f7dca0a37b0949b7336f40d24cd41,
+    type: 3}
+  particalEffects: {fileID: 0}
 --- !u!212 &8936538903207399869
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1824,8 +1852,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5be75c1bd711dfc4f9050a2fcd3a5c3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
   points: 50
+  pickupPrefab: {fileID: 6195663844516507710, guid: 044f7dca0a37b0949b7336f40d24cd41,
+    type: 3}
+  particalEffects: {fileID: 0}
 --- !u!212 &8936538903236243359
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1947,8 +1977,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5be75c1bd711dfc4f9050a2fcd3a5c3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
   points: 50
+  pickupPrefab: {fileID: 6195663844516507710, guid: 044f7dca0a37b0949b7336f40d24cd41,
+    type: 3}
+  particalEffects: {fileID: 0}
 --- !u!212 &8936538903241035316
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2070,8 +2102,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5be75c1bd711dfc4f9050a2fcd3a5c3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
   points: 50
+  pickupPrefab: {fileID: 6195663844516507710, guid: 044f7dca0a37b0949b7336f40d24cd41,
+    type: 3}
+  particalEffects: {fileID: 0}
 --- !u!212 &8936538903306939604
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2193,8 +2227,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5be75c1bd711dfc4f9050a2fcd3a5c3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
   points: 50
+  pickupPrefab: {fileID: 6195663844516507710, guid: 044f7dca0a37b0949b7336f40d24cd41,
+    type: 3}
+  particalEffects: {fileID: 0}
 --- !u!212 &8936538903356786541
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2316,8 +2352,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5be75c1bd711dfc4f9050a2fcd3a5c3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
   points: 50
+  pickupPrefab: {fileID: 6195663844516507710, guid: 044f7dca0a37b0949b7336f40d24cd41,
+    type: 3}
+  particalEffects: {fileID: 100006, guid: bcaff8fc36e95584bb27cc3cf7c6cb14, type: 3}
 --- !u!212 &8936538903391800431
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2439,8 +2477,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5be75c1bd711dfc4f9050a2fcd3a5c3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
   points: 50
+  pickupPrefab: {fileID: 6195663844516507710, guid: 044f7dca0a37b0949b7336f40d24cd41,
+    type: 3}
+  particalEffects: {fileID: 0}
 --- !u!212 &8936538903399362577
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2562,8 +2602,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5be75c1bd711dfc4f9050a2fcd3a5c3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
   points: 50
+  pickupPrefab: {fileID: 6195663844516507710, guid: 044f7dca0a37b0949b7336f40d24cd41,
+    type: 3}
+  particalEffects: {fileID: 0}
 --- !u!212 &8936538903482859597
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2685,8 +2727,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5be75c1bd711dfc4f9050a2fcd3a5c3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
   points: 50
+  pickupPrefab: {fileID: 6195663844516507710, guid: 044f7dca0a37b0949b7336f40d24cd41,
+    type: 3}
+  particalEffects: {fileID: 0}
 --- !u!212 &8936538903583143605
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2808,8 +2852,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5be75c1bd711dfc4f9050a2fcd3a5c3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
   points: 50
+  pickupPrefab: {fileID: 6195663844516507710, guid: 044f7dca0a37b0949b7336f40d24cd41,
+    type: 3}
+  particalEffects: {fileID: 0}
 --- !u!212 &8936538903639336714
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2931,8 +2977,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5be75c1bd711dfc4f9050a2fcd3a5c3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
   points: 50
+  pickupPrefab: {fileID: 6195663844516507710, guid: 044f7dca0a37b0949b7336f40d24cd41,
+    type: 3}
+  particalEffects: {fileID: 0}
 --- !u!212 &8936538903655839117
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3054,8 +3102,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5be75c1bd711dfc4f9050a2fcd3a5c3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
   points: 50
+  pickupPrefab: {fileID: 6195663844516507710, guid: 044f7dca0a37b0949b7336f40d24cd41,
+    type: 3}
+  particalEffects: {fileID: 0}
 --- !u!212 &8936538903722328590
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3177,8 +3227,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5be75c1bd711dfc4f9050a2fcd3a5c3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
   points: 50
+  pickupPrefab: {fileID: 6195663844516507710, guid: 044f7dca0a37b0949b7336f40d24cd41,
+    type: 3}
+  particalEffects: {fileID: 0}
 --- !u!212 &8936538903731907976
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3262,6 +3314,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8936538903171870648}
     m_Modifications:
+    - target: {fileID: 2322474432486733818, guid: 00f349c7f9f21d142ac304631234215d,
+        type: 3}
+      propertyPath: particalEffects
+      value: 
+      objectReference: {fileID: 100006, guid: bcaff8fc36e95584bb27cc3cf7c6cb14, type: 3}
     - target: {fileID: 7132878881238021536, guid: 00f349c7f9f21d142ac304631234215d,
         type: 3}
       propertyPath: m_LocalPosition.x

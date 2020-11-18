@@ -5,10 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
-    public Sprite sprite;
-
     public int blocksCountRed;
-
+    int index;
     private void Start()
     {
         //Block_Red[] blockRed = FindObjectsOfType<Block_Red>(); //найти все обьекты у которых есть тип block
@@ -32,8 +30,15 @@ public class LevelManager : MonoBehaviour
         blocksCountRed--;
         if (blocksCountRed <= 0)
         {
-            int index = SceneManager.GetActiveScene().buildIndex;
+            index = SceneManager.GetActiveScene().buildIndex;
             SceneManager.LoadScene(index + 1);
+           
         }
+    }
+
+    public void WonLevel()
+    {
+        blocksCountRed--;
+
     }
 }

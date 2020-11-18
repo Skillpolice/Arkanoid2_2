@@ -7,16 +7,15 @@ using UnityEngine.UI;
 
 public class InvisibleBloc : MonoBehaviour
 {
-
+    [Header("Managers")]
     GameManager gameManager; //ссылка на обьект блокаБ что он мог подсчитать каждый разбитый блок
     LevelManager levelManager;
 
+    public SpriteRenderer spriteRenderer;
 
     public int points;
     public int blockHealth;
     public int invblock;
-    public SpriteRenderer spriteRenderer;
-
 
     private void Start()
     {
@@ -26,16 +25,10 @@ public class InvisibleBloc : MonoBehaviour
         spriteRenderer.GetComponent<SpriteRenderer>(); // GetComponent - ищет компонент на котором весит скрипт обьекта
     }
 
-    public void Update()
+    public void OnCollisionEnter2D(Collision2D collision)
     {
-       
-    }
-
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-
         invblock--;
-        if (invblock == 1)
+        if (invblock == 1) ////отображение невидимого блока
         {
             spriteRenderer.enabled = !spriteRenderer.enabled;
         }

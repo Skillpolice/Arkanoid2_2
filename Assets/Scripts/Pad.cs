@@ -5,49 +5,47 @@ using UnityEngine;
 public class Pad : MonoBehaviour
 {
     Ball ball;
+    GameManager gameManager;
 
     public bool autoPlay;
-    float yPosition;
     public float maxX;
 
+    float yPosition;
 
-    bool idSctivePad;
+
     void Start()
     {
         ball = FindObjectOfType<Ball>();
+        gameManager = FindObjectOfType<GameManager>();
 
         yPosition = transform.position.y; // 3апоминаем позицию для платформы по Y
         Cursor.visible = false;
     }
 
 
-    void Update()
+    public void Update()
     {
 
+        if (gameManager.isPauseActive)
+        {
+            //пауза активна - ничего не нужно делать
+            return;
+        }
+
+        Vector3 padNewPosition;
         if (autoPlay)
         {
             Vector3 ballPos = ball.transform.position; //позиция мача 
-            Vector3 padNewPos = new Vector3(ballPos.x, yPosition, 0); //новая позиция pad
-
-            padNewPos.x = Mathf.Clamp(padNewPos.x, -maxX, maxX);
-            transform.position = padNewPos; // Занесли координаты мыши в платфору двигаем её за мышкой
-            
+            padNewPosition = new Vector3(ballPos.x, yPosition, 0); //новая позиция pad
+           
         }
         else
         {
             Vector3 mouseWorldPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition); // находим координаты мыши в игровом экране координат
-            Vector3 padNewPosition = new Vector3(mouseWorldPosition.x, yPosition, 0); //Запоминаем двиежение платформы только  по X влево вправо и всё
-
-            padNewPosition.x = Mathf.Clamp(padNewPosition.x, -maxX, maxX);
-            transform.position = padNewPosition; // Занесли координаты мыши в платфору двигаем её за мышкой
-            //autoPlay = true;
+            padNewPosition = new Vector3(mouseWorldPosition.x, yPosition, 0); //Запоминаем двиежение платформы только  по X влево вправо и всё
+        
         }
-
-
-
-
-
-
-
+        padNewPosition.x = Mathf.Clamp(padNewPosition.x, -maxX, maxX);
+        transform.position = padNewPosition; // Занесли координаты мыши в платфору двигаем её за мышкой
     }
 }

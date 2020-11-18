@@ -9,11 +9,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7841985741060672102}
-  - component: {fileID: 933397625733371277}
+  - component: {fileID: 2058754276597942577}
+  - component: {fileID: 846894005170052727}
   - component: {fileID: 7841985741060672101}
   - component: {fileID: 7841985741060672100}
   m_Layer: 0
-  m_Name: element_blue_square 1
+  m_Name: block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33,7 +34,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &933397625733371277
+--- !u!114 &2058754276597942577
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -42,11 +43,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 7841985741060672103}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9edc8febc97ab76449c2d731f1afe37d, type: 3}
+  m_Script: {fileID: 11500000, guid: b6645984277977f478d8ca55612e437a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  points: 100
-  gameManager: {fileID: 0}
+  points: 0
+--- !u!114 &846894005170052727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7841985741060672103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5be75c1bd711dfc4f9050a2fcd3a5c3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: 50
+  pickupPrefab: {fileID: 6195663844516507710, guid: 044f7dca0a37b0949b7336f40d24cd41,
+    type: 3}
+  particalEffects: {fileID: 100000, guid: 77ec3c4e07a36814fb3169ecef41b50a, type: 3}
 --- !u!212 &7841985741060672101
 SpriteRenderer:
   m_ObjectHideFlags: 0

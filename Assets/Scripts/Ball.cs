@@ -14,7 +14,7 @@ public class Ball : MonoBehaviour
     public bool isStarted;
 
     float yPosition;
-   
+
 
     private void Start()
     {
@@ -31,8 +31,6 @@ public class Ball : MonoBehaviour
 
     private void Update()
     {
-
-
         if (isStarted)
         {
 
@@ -51,13 +49,18 @@ public class Ball : MonoBehaviour
         }
     }
 
-    private void StarBall() //
+    public void StarBall() //
     {
         float randX = Random.Range(-5f, 5f);
         Vector2 force = new Vector2(randX, 5).normalized * speedBall;
         rb.velocity = force;   //создаем дивежие меча по координатам через AddForce
         isStarted = true;
     }
-
-
+    public void RestartBall()
+    {
+        isStarted = false;
+        rb.velocity = Vector2.zero;
+    }
+    
+    
 }
