@@ -2,15 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PickupPadSize : MonoBehaviour
+public class PickauHealth : MonoBehaviour
 {
-  
     private void ApplyEffect()
     {
-        //изменение платформы
-        float randX = Random.Range(0.5f, 1.5f);
-        Pad pad = FindObjectOfType<Pad>();
-        pad.transform.localScale = new Vector3(randX, 1, 0);
+        GameManager gameManager = FindObjectOfType<GameManager>();
+
+        //int randLife = Random.Range(0, 1);
+        bool boolValue = (Random.Range(0, 2) == 0);
+        if (boolValue)
+        {
+            print(true);
+            gameManager.LoseLife();
+        }
+        else
+        {
+            print(false);
+            gameManager.UpLife();
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -19,7 +28,6 @@ public class PickupPadSize : MonoBehaviour
         {
             //TODO применение эффекта
             //вызов функции 
-
             ApplyEffect();
             Destroy(gameObject);
         }

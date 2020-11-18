@@ -1046,7 +1046,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   points: 50
-  pickupPrefab: {fileID: 6195663844516507710, guid: 044f7dca0a37b0949b7336f40d24cd41,
+  pickupPrefab: {fileID: 2325610959444692997, guid: ae93d701e74c9304e9ac654a1c1cc1ee,
     type: 3}
   particalEffects: {fileID: 100006, guid: bcaff8fc36e95584bb27cc3cf7c6cb14, type: 3}
 --- !u!212 &8936538902405104479

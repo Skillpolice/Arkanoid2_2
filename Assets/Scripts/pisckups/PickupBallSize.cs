@@ -4,11 +4,6 @@ using UnityEngine;
 
 public class PickupBallSize : MonoBehaviour
 {
-    float yPosition;
-    void Start()
-    {
-        yPosition = transform.position.x;
-    }
 
     private void ApplyEffect()
     {
@@ -16,6 +11,9 @@ public class PickupBallSize : MonoBehaviour
         float randX = Random.Range(0.2f, 2f);
         ball.transform.localScale = new Vector3(randX, randX); //Изменение размера мача
 
+        ball.speedBall = Random.Range(2, 15);
+        ball.StartBall();
+        
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

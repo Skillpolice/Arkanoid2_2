@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 8652711697261708287}
-  speedBall: 10
+  speedBall: 5
   isStarted: 0
 --- !u!50 &8652711697261708287
 Rigidbody2D:

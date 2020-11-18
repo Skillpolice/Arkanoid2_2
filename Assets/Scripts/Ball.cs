@@ -24,7 +24,7 @@ public class Ball : MonoBehaviour
 
         if (pad.autoPlay)
         {
-            StarBall();
+            StartBall();
         }
     }
 
@@ -43,13 +43,13 @@ public class Ball : MonoBehaviour
 
             if (Input.GetMouseButtonDown(0)) //нажатие мыши left для полета меча
             {
-                StarBall();
+                StartBall();
                 return;
             }
         }
     }
 
-    public void StarBall() //
+    public void StartBall() //
     {
         float randX = Random.Range(-5f, 5f);
         Vector2 force = new Vector2(randX, 5).normalized * speedBall;

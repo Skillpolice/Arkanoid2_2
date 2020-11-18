@@ -1559,12 +1559,6 @@ PrefabInstance:
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 4120409482676737263, guid: 5f5cd4f5234d3a54586587ba0ae84314,
-        type: 3}
-      propertyPath: pickupPrefab
-      value: 
-      objectReference: {fileID: 2325610959444692997, guid: ae93d701e74c9304e9ac654a1c1cc1ee,
-        type: 3}
     - target: {fileID: 4126025437886680411, guid: 5f5cd4f5234d3a54586587ba0ae84314,
         type: 3}
       propertyPath: sprite.Array.size
@@ -2057,7 +2051,7 @@ PrefabInstance:
     - target: {fileID: 2226624966163664182, guid: dd70be17c2a161346bd61c9033cb1ff0,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2226624966163664185, guid: dd70be17c2a161346bd61c9033cb1ff0,
         type: 3}
@@ -2164,11 +2158,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 1.75
       objectReference: {fileID: 0}
-    - target: {fileID: 8257665996664810261, guid: dd70be17c2a161346bd61c9033cb1ff0,
+    - target: {fileID: 5295843829944472673, guid: dd70be17c2a161346bd61c9033cb1ff0,
         type: 3}
       propertyPath: pickupPrefab
       value: 
-      objectReference: {fileID: 8781526723761018192, guid: ccb5bf2597906a34b985f2fccb6b32b1,
+      objectReference: {fileID: 2980726440521862037, guid: 377f98d7747a1554c90d3ad1f6b38eb2,
         type: 3}
     - target: {fileID: 8747339283545722117, guid: dd70be17c2a161346bd61c9033cb1ff0,
         type: 3}
@@ -2180,6 +2174,12 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 1.75
       objectReference: {fileID: 0}
+    - target: {fileID: 8884612790140092337, guid: dd70be17c2a161346bd61c9033cb1ff0,
+        type: 3}
+      propertyPath: pickupPrefab
+      value: 
+      objectReference: {fileID: 2980726440521862037, guid: 377f98d7747a1554c90d3ad1f6b38eb2,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd70be17c2a161346bd61c9033cb1ff0, type: 3}
 --- !u!1001 &3109312730059482819

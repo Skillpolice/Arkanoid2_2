@@ -2,15 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PickupPadSize : MonoBehaviour
+public class PickupAgro : MonoBehaviour
 {
-  
     private void ApplyEffect()
     {
-        //изменение платформы
-        float randX = Random.Range(0.5f, 1.5f);
-        Pad pad = FindObjectOfType<Pad>();
-        pad.transform.localScale = new Vector3(randX, 1, 0);
+        Ball ball = FindObjectOfType<Ball>();
+        ball.RestartBall();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

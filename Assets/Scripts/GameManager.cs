@@ -65,15 +65,19 @@ public class GameManager : MonoBehaviour
 
     public void LoseLife()
     {
-        lifeCount --;
+        lifeCount--;
         healthText.text = "Health: " +  lifeCount.ToString();
         if (lifeCount <= 0)
         {
-
             isPauseActive = true;
             gameOver.SetActive(true);
             Cursor.visible = true;
         }
+    }
+    public void UpLife()
+    {
+        lifeCount++;
+        healthText.text = "Health: " + lifeCount.ToString();
     }
 
     //добавление очков при при разрушении блока
