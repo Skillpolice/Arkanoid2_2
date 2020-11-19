@@ -1,7 +1,11 @@
 ﻿using UnityEngine;
- 
+using UnityEngine.UI;
+
 public class ResetLevel : MonoBehaviour
 {
+  
+
+
     GameManager gameManager;
     Ball ball;
     public GameObject particalEffects;
@@ -18,6 +22,7 @@ public class ResetLevel : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Ball")) //если тег совпадает с названием выполняем код ниже
         {
+            
             //если мяч - отнять жизнь
             gameManager.LoseLife();
             ball.RestartBall();

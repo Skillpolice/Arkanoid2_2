@@ -6,21 +6,34 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
+
+    [Header("Text")]
     public Text scoreText;
     public Text healthText;
+    [Header("Object")]
     public GameObject panelPause;
     public GameObject gameOver;
+    public GameObject[] hearts;
 
+
+    [Header("Ball PAd")]
     public Pad pad;
     public Ball ball;
 
-    int score;
+    public int score;
 
     [Header("Ко-ло жизней")]
     public int lifeCount;
 
     [HideInInspector]
     public bool isPauseActive;
+
+    public void DamageLife(int d)
+    {
+        lifeCount -= d;
+    }
+
+
 
     private void Awake() // для удаления GameManagera на разных сценах
     {
@@ -42,14 +55,28 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    private void Update()
+    public void Update()
     {
+        
+        if(lifeCount < 1)
+        {
+            Destroy(hearts[0].gameObject);
+        }
+        else if(lifeCount < 2)
+        {
+            Destroy(hearts[1].gameObject);
+        }
+        else if (lifeCount < 3)
+        {
+            Destroy(hearts[2].gameObject);
+        }
+
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
             if (isPauseActive)
             {
-                Time.timeScale = 2;
+                Time.timeScale = 1;
                 isPauseActive = false;
                 Cursor.visible = false;
             }
@@ -67,6 +94,7 @@ public class GameManager : MonoBehaviour
     {
         lifeCount--;
         healthText.text = "Health: " +  lifeCount.ToString();
+        
         if (lifeCount <= 0)
         {
             isPauseActive = true;
@@ -84,7 +112,7 @@ public class GameManager : MonoBehaviour
     public void AddScore(int addscore)
     {
         score += addscore;
-        scoreText.text = score.ToString();
+        scoreText.text = "Points: " + score.ToString();
     }
 
 

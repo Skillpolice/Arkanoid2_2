@@ -7,7 +7,13 @@ public class PickupAgro : MonoBehaviour
     private void ApplyEffect()
     {
         Ball ball = FindObjectOfType<Ball>();
+        Pad pad = FindObjectOfType<Pad>();
         ball.RestartBall();
+        if (pad.autoPlay)
+        {
+            ball.RestartBall();
+            ball.StartBall();
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
